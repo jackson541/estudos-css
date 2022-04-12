@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #first_element{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom: 10px;
+        }
+
+        #second_element{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Margin pode receber valores em px, em % ou em rem e com o seguinte formato:
+    </p>
+    <ul>
+        <li>
+            margin: 12px 16px 10px 4px; (margin-top, margin-right, margin-bottom, margin-left)
+        </li>
+        <li>
+            margin: 12px 16px 0; (margin-top, margin-right e margin-left, margin-bottom)
+        </li>
+        <li>
+            margin: 8px 16px; (margin-tope e margin-bottom, margin-right e margin-left)
+        </li>
+        <li>
+            margin: 8px; (todos os lados)
+        </li>
+    </ul>
+    
+    <br>
+
+    <p>
+        Algo para se ter cuidado é o margin collapse, que ocorre na junção do margin-top e 
+        margin-bottom de diferentes elementos.
+    </p>
+    <p>
+        O exemplo abaixo mostra 2 elemendos, o primeiro com margin-bottom 10px e o segundo com margin-top 8px. 
+        Porém, apenas o maior margin irá ser aplicado pois eles não se complementam, logo o de 10px será aplicado.
+    </p>
+    <p>
+        O margin collapse não ocorre para as margens laterais.
+    </p>
+    <div id="first_element">
+        elemento1
+    </div>
+    <div id="second_element">
+        elemento2
+    </div>
+</body>
+</html>

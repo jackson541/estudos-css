@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #elemento1 {
+            width: 100px;
+            height: 100px;
+            border: 25px solid red;
+        }
+
+        #elemento2 {
+            width: 100px;
+            height: 100px;
+            border: 25px solid red;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        Bordas podem ser definidas separadamente em cada parte do seu elemento (tamanho, cor e estilo), 
+        mas a existe a forma mais resumida para se utilizar: 
+    </p>
+    <ul>
+        <li>
+            border: 1px solid red
+        </li>
+    </ul>
+
+    <br>
+    <p>Exemplo:</p>
+    <div id="elemento1">
+        Elemento
+    </div>
+
+    <p>
+        A borda pode interferir no tamanho do elemento, já que ele se soma ao padding, 
+        mas a propriedade border-box pode alterar isso:
+    </p>
+    <div id="elemento2">
+        Elemento
+    </div>
+</body>
+</html>
